@@ -37,11 +37,16 @@ body {
     flex-direction: column;
     min-height: 100vh;}
 
-
-
+    .navcolor:visited{
+        color: rgb(255, 255, 255);
+    }
 .navcolor:hover {
-    color: aquamarine;
+    color: rgb(47, 255, 186);
 }
+.navcolor:active {
+    color: rgb(0, 17, 12);
+}
+
 .iconito {
     background-image: url(https://i.ibb.co/rm7KQwS/pngegg.png);
 }
@@ -147,8 +152,9 @@ color: rgb(241, 241, 241);
     color: white;
 }
 .registerp {
+    max-width: 200px;
     color: white;
-    margin: 10px 35px 0px 35px
+    margin: 10px auto 0px auto
 }
 br{
     margin: 0px;
@@ -157,4 +163,3 @@ br{
 .btn-in {
     margin-top: 25px;
 }
-footer.grid-cont {}
