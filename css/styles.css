@@ -8,17 +8,19 @@ box-sizing: border-box;}
     padding: 0;
     border-radius: 50%;
     border: solid 0.15em;
-    border-color: white;
+    border-color: #EEFBFB;
 }
 nav {
     width: 100%;
-    background-color: #000000;
-    margin-bottom: 10px;
+    background-color: #0a0a0aa9;
+    margin-bottom: 30px;
+    box-shadow: 10px 0px 10px;
 }
 .navcolor{
-    color: rgb(255, 255, 255);
-    font-size: 16px;
+    color: #EEFBFB;
+    font-size: 1.1em;
     text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
 }
 nav ul{
     width: 100%;
@@ -28,7 +30,9 @@ nav ul{
 
 }
 body {
-    background-color: #26282B;
+    background-image: url(https://www.xtrafondos.com/wallpapers/resoluciones/19/los-santos-gta-v_3840x2160_3229.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     min-height: 100vh;}
@@ -42,6 +46,7 @@ body {
     background-image: url(https://i.ibb.co/rm7KQwS/pngegg.png);
 }
 .grid-cont {
+    box-shadow: 10px 0px 10px black;
     padding-top: 20px;
     padding-left: 1.9em;
     padding-right: 1.9em;
@@ -53,17 +58,18 @@ grid-template-areas:
 'info'
 'dev'
 ;
-    color: white;
+    color: #EEFBFB;
     font-size: 1em;
-    background-color: #000000;
+    background-color: #0a0a0ad0;
     margin-top: auto;
 
 }
 .dev {
     grid-area: dev;
-    color: white;
+    color: #EEFBFB;
     text-align: center;
     font-size: 10px;
+    font-family:  'Red Hat Text', sans-serif;
 }
 .info a {text-decoration: none;
 color: rgb(136, 255, 229);}
@@ -86,20 +92,65 @@ color: rgb(136, 255, 229);}
 }
 .gridshome{
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 67% 33%;
     grid-template-rows: auto;
-    margin-bottom: 10px;
+    margin: 10px 100px 35px 100px;
+    
 }
-.publicidad {
-    grid-column: 2 / span 1;
-    background-color: #0f0f11;
-    max-width: 100%;
-    height: 73vh;
-    margin: 10px;
+
+
+h1 {
+    font-family: 'Palanquin Dark', sans-serif;
+color: rgb(241, 241, 241);
+}
+.alltxt {
+    font-family:  'Red Hat Text', sans-serif;
+    margin: 27px 0px 27px 0px;
+    color: white;
+}
+.btn-log {
+    width: 9.5em;
+    height: 2.3em;
+    margin: 18px 0px 18px 0px;
+    border: none;
+    outline: none;
+    background-color: #e2304b;
+    font-size: 18px;
     border-radius: 5px;
 }
+.login {
+    grid-column: 2 / span 1;
+    background-color: #0f0f11d4;
+    max-width: 100%;
+    height: 77vh;
+    margin: 15px;
+    padding: 0px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 40px;
+}
 .principal {
-background-color: #0f0f11;
-margin: 10px;
-border-radius: 5px;
+    background-color: #0f0f11da;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 50px;
+    box-shadow: 5px 5px 30px;
+    }
+.tittlelog {
+    color: white;
+    margin: 30px 0px 20px 0px;
+}
+.holders {
+    margin: 5px 0px 5px 0px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.259);
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+}
+.registerp {
+    color: white;
+    margin: 10px 35px 0px 35px
 }
