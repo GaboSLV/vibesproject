@@ -147,6 +147,7 @@ color: rgb(241, 241, 241);
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.259);
     outline: none;
+    width: 80%;
     height: 40px;
     font-size: 16px;
     color: white;
