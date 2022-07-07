@@ -91,7 +91,7 @@ color: rgb(136, 255, 229);}
     display: grid;
     grid-template-columns: 67% 33%;
     grid-template-rows: auto;
-    margin: auto;
+    margin: 4% 10% 3% 10%;
 }
 
 
@@ -157,3 +157,4 @@ br{
 .btn-in {
     margin-top: 25px;
 }
+footer.grid-cont {}
