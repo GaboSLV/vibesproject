@@ -118,6 +118,7 @@ color: rgb(241, 241, 241);
     background-color: #01e7a6;
     font-size: 18px;
     border-radius: 5px;
+    box-shadow: 4px 4px 40px;
 }
 .login {
     grid-column: 2 / span 1;
@@ -156,6 +157,10 @@ color: rgb(241, 241, 241);
     max-width: 80%;
     color: white;
     margin: 10px auto 0px auto
+}
+.registerp a{
+text-decoration: none;
+color: #01e7a6;
 }
 br{
     margin: 0px;
