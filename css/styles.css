@@ -30,7 +30,7 @@ nav ul{
 
 }
 body {
-    background-image: url(https://www.xtrafondos.com/wallpapers/resoluciones/19/los-santos-gta-v_3840x2160_3229.jpg);
+    background-image: url(../assets/img/bgpage.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
@@ -115,7 +115,7 @@ color: rgb(241, 241, 241);
     margin: 10px 0px 40px 0px;
     border: none;
     outline: none;
-    background-color: #e2304b;
+    background-color: #01e7a6;
     font-size: 18px;
     border-radius: 5px;
 }
