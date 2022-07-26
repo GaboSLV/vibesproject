@@ -29,14 +29,6 @@ nav ul{
     align-items: center;
 
 }
-body {
-    background-image: url(../assets/img/bgpage.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;}
-
     .navcolor:visited{
         color: rgb(255, 255, 255);
     }
@@ -168,4 +160,66 @@ br{
 }
 .btn-in {
     margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aplical {
+    margin: auto;
+    background-color: black;
+    height: 500PX;
+    border-radius: 10px;
+}
+.testgrids {
+    background-color: rgba(0, 0, 0, 0.749);
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto;
+    color: white;
+    margin: 10%;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 10px 10px 40px black;
+
+}
+
+.parrafito {
+    width: 100%;
+    padding: 15px;
+    font-family:   'Red Hat Text', sans-serif;
+    font: 20px;
+}
+
+body {
+    background-image: url(../assets/img/bgpage.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;}
+
+.imggg 
+{
+text-align: center;
+width: 300px;
+height: 300px;}
+.centrarimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
