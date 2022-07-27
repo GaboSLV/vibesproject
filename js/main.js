@@ -3,8 +3,8 @@ let monto;
 let solucion;
 let apuesta;
 let salir;
-balance = 50000;
-do {
+//Funcionamiento de apuesta.
+function moneda () {
   monto = parseInt(prompt("Ingresa la cantidad que deseas apostar"));
   balance = balance - monto;
   alert("Tu balance actual es: " + balance);
@@ -25,4 +25,15 @@ balance = balance + (monto*1.9);
   if (balance <=0) {
     alert ("Lo lamentamos, no tienes balance para realizar esta operación. Recarga tu balance.")
   }
+}
+
+
+
+
+
+
+//Bucle de apuesta
+balance = 50000;
+do {
+ moneda ();
 } while (salir != "n");
