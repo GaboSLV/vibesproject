@@ -33,7 +33,7 @@ if (busqueda!=undefined) {
 else {
     contenido = document.createElement("div");
     contenido.innerHTML = `  
-    <p>Equipo no encontrado</p>
+    <div class=equipoList><p>Equipo no encontrado</p></div>
     `;
     document.body.appendChild(contenido);
    
