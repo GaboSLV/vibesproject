@@ -1,44 +1,40 @@
-const Equipos = [
+
+const equipos= [
     {
-    equipo: "Real Madrid",
-    gep: "3/1/1",
-    capitan: "Karim Benzema",
-    estrella: "Karim Benzema",
+    team: "Real Madrid", gep: "3/1/1", capitan: "Karim Benzema", estrella: "Karim Benzema",
 },
 {
-    equipo: "Barcelona",
-    gep: "2/1/2",
-    capitan: "Gerard Piqué",
-    estrella: "Robert Lewandowski",
+    team: "Barcelona", gep: "2/1/2", capitan: "Gerard Piqué", estrella: "Robert Lewandowski",
 },
 
 {
-    equipo: "Liverpool",
-    gep: "1/2/2",
-    capitan: "Fabinho",
-    estrella: "Mohamed Salah",
+    team: "Liverpool", gep: "1/2/2", capitan: "Fabinho", estrella: "Mohamed Salah",
 
 },
 {
-    equipo: "Atletico Madrid",
-    gep: "2/2/1",
-    capitan: "Savic",
-    estrella: "Griezmann",
+    team: "Atletico Madrid", gep: "2/2/1", capitan: "Savic", estrella: "Griezmann",
 
 }
 ];
-alert("La cantidad de equipos cargados es de: "+Equipos.length)
+alert("La cantidad de equipos cargados es de: "+equipos.length);
+let buscado = prompt ("Nombre del equipo");
+let busqueda = equipos.find ((equipo)=>equipo.team== buscado);
+if (busqueda!=undefined) {
 
-function buscarEquipo (total, equipo) {
-    const equipoEncontrado = total.find ((equi) => equi.equipo == equipo);
-    return equipoEncontrado;
-
-}
-let equipoBuscado = prompt("Ingresa el nombre del equipo")
-const encontrado=buscarEquipo (Equipos,equipoBuscado)
-if (encontrado!=undefined) {
-console.log (encontrado)
-}
+    let contenido = document.createElement("div");
+    contenido.innerHTML = `  
+    <div class=equipoList><p>Equipo buscado: ${busqueda.team}</p>
+    <p>Ganados, empatados y perdidos: ${busqueda.gep}</p>
+    <p>Capitán: ${busqueda.capitan}</p>
+    <p>Estrella: ${busqueda.estrella}</p>
+    </div>`;
+    document.body.appendChild(contenido);
+    }
 else {
-    alert("Equipo no encontrado.")
+    contenido = document.createElement("div");
+    contenido.innerHTML = `  
+    <p>Equipo no encontrado</p>
+    `;
+    document.body.appendChild(contenido);
+   
 }

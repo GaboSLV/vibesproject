@@ -21,7 +21,7 @@ balance += (monto*1.9);
     alert("Lo lamentamos perdiste, tu balance actual es: " + balance);
   }
   salir = prompt(
-    "Usa n para salir / b para consultar tu balance / Cualquier otra tecla para seguir apostando."
+    'Usa "n" para salir "b" para consultar tu balance o cualquier otra tecla para seguir apostando.'
   );
   if (salir=="b") {
     alert("Tu balance actual es: " +balance);
