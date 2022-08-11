@@ -222,6 +222,6 @@ body {
   border-radius: 15px;
 }
 .equipoList p{
-  margin: 0 25% 0 25%;
+  padding: 0 0 0 40px;
   color: rgb(255, 255, 255);
 }

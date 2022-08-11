@@ -16,8 +16,21 @@ const equipos= [
 
 }
 ];
-alert("La cantidad de equipos cargados es de: "+equipos.length);
-let buscado = prompt ("Nombre del equipo");
+
+
+let formulario = document.createElement("div");
+formulario.innerHTML = 
+`        
+<h2>Ingresa el nombre del equipo que deseas buscar</h2>
+<p>La cantidad de equipos cargados es de: ${+equipos.length}</p>
+<input type="text" name="Nombre del equipo" id="equipo">
+<input type="button" value="Enviar" id="enviarInfo">`;
+document.body.appendChild(formulario);
+let btnEnviar = document.getElementById("enviarInfo");
+btnEnviar.addEventListener("click", buscador);
+function buscador () {
+let buscado = document.getElementById("equipo").value;
+console.log (buscado)
 let busqueda = equipos.find ((equipo)=>equipo.team== buscado);
 if (busqueda!=undefined) {
 
@@ -37,4 +50,6 @@ else {
     `;
     document.body.appendChild(contenido);
    
+}
+
 }
